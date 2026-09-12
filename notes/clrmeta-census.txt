@@ -1,0 +1,25 @@
+$ python tools/clrmeta.py Monstrum/Monstrum_Data/Managed --census
+binaries examined : 15
+managed           : 15
+native            : 0
+
+file                                            bytes format runtime    #Strings        #US
+Assembly-CSharp-firstpass.dll                  291328 PE32   v2.0.50727      92364       4300
+Assembly-CSharp.dll                           2156032 PE32   v2.0.50727     268112     141056
+Assembly-UnityScript-firstpass.dll              87552 PE32   v2.0.50727      14120       5524
+Assembly-UnityScript.dll                        20480 PE32   v2.0.50727       3312         28
+Boo.Lang.dll                                   126976 PE32   v2.0.50727      19976       2204
+Mono.Security.dll                              293376 PE32   v2.0.50727      35968      23100
+System.Core.dll                                265728 PE32   v2.0.50727      26344      14796
+System.dll                                    1069056 PE32   v2.0.50727     175524      78564
+UnityEngine.Networking.dll                     251392 PE32   v2.0.50727      32824      44036
+UnityEngine.PlaymodeTestsRunner.dll             30208 PE32   v2.0.50727       5864       1612
+UnityEngine.UI.dll                             242688 PE32   v2.0.50727      42728       6720
+UnityEngine.VR.dll                               3072 PE32   v2.0.50727        224          8
+UnityEngine.dll                               1200128 PE32   v2.0.50727     221020      39448
+UnityScript.Lang.dll                            13824 PE32   v2.0.50727       2964        176
+mscorlib.dll                                  2497024 PE32   v2.0.50727     217108     177096
+
+#Strings total : 1158452 bytes of UTF-8 names
+#US total      : 538668 bytes of UTF-16 string literals
+runtime versions : {'v2.0.50727': 15}

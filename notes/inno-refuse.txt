@@ -1,0 +1,13 @@
+$ python tools/inno56.py ldr Monstrum/unins000.exe
+file            : unins000.exe
+bytes           : 1343048
+ID occurrences  : 0  []
+RCDATA 11111    : not found
+inno56: refused -- no SetupLdrOffsetTable ID in this file
+rc=1
+$ python tools/inno56.py header Monstrum/unins000.exe
+inno56: refused -- unins000.exe carries no SetupLdrOffsetTable ID anywhere in its 1343048 bytes
+rc=1
+$ python tools/inno.py ...
+    python tools/inno.py FILE --extract OUTDIR [--only PREFIX]
+

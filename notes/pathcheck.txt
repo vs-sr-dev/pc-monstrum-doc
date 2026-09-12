@@ -1,0 +1,14 @@
+$ python tools/pathcheck.py --needle <5 needles: this machine's two folders and user, the object's install folder, the object's account names>
+tracked files            : 652
+text files checked       : 652
+needles                  : 5, masked in this report
+hits excused as artefacts: 0
+VIOLATIONS               : 0
+
+-- POSITIVE CONTROL, which must fire ---------------------------
+   planted line : see D:\<needle 1>\pc-rpgmaker2003-doc\notes\x.txt for more
+   the check fires on it : True
+
+-- NEGATIVE CONTROL, which must stay quiet ---------------------
+   line : the build root D:\ha\02rpg2000\2003\ is a third party's
+   unexcused hits : 0

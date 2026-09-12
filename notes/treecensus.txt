@@ -1,0 +1,46 @@
+$ python tools/treecensus.py Monstrum
+root            : Monstrum
+files           : 89
+directories     : 12
+bytes           : 2500176557
+
+year of the directory record:
+  year    files          bytes
+  2017        2         132143
+  2018       79     2495287147
+  2025        7        4465155
+  2026        1         292112
+
+extensions:
+  ext         files          bytes
+  .dll           26       17880248
+  (none)         11        6740119
+  .assets         9      297679908
+  .ress           7     1657079072
+  .ini            4         315446
+  .resource       4      492065344
+  .txt            3         427584
+  .config         3          56569
+  .ico            3         273598
+  .exe            2       23504968
+  .aspx           2         118649
+  .info           2            812
+  .dmp            1         155324
+  .log            1          24970
+  .lnk            1            831
+  .mdb            1         413678
+  .browser        1           1605
+  .map            1           2618
+  .xml            1          25817
+  .bmp            1          47670
+  .hashdb         1           2571
+  .script         1            421
+  .dat            1        3094667
+  .msg            1          23147
+  .zip            1         240921
+
+top-level entries:
+  name            files          bytes     pct
+  Monstrum_Data      68     2470670063  98.82%
+  (root)             18       29228909   1.17%
+  2018-12-15_165138      3         277585   0.01%

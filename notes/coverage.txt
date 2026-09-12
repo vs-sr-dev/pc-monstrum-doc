@@ -1,0 +1,31 @@
+$ python tools/coverage.py tree --root Monstrum
+denominator : 89 files, 2500176557 bytes -- every file under Monstrum, classified BY MAGIC
+
+  bucket      files        bytes      share  format
+  specified      28     41385216    1.6553 %  PE / MZ executable (Microsoft) -- header arithmetic checked, not the two letters alone
+  specified       1      3094667    0.1238 %  Inno Setup uninstall log (jrsoftware, published as source: Struct.pas TUninstallLogHeader) -- 64-byte ID
+  specified      19       976006    0.0390 %  plain text, ASCII
+  specified       1       413678    0.0165 %  Mono symbol file .mdb (Mono, published as source: MonoSymbolFile.cs) -- magic and version 50.0
+  specified       3       273598    0.0109 %  Windows icon
+  specified       2       243492    0.0097 %  ZIP archive (PKWARE APPNOTE)
+  specified       1       155324    0.0062 %  Windows minidump (MINIDUMP_HEADER, Windows SDK minidumpapiset.h) -- version word, stream directory inside the file (mdmp.py)
+  specified       1        47670    0.0019 %  Windows BMP (Microsoft, published)
+  specified       1        23147    0.0009 %  Inno Setup compiled messages (jrsoftware, published as source: Struct.pas TMessagesHeader) -- 64-byte ID
+  specified       1          831    0.0000 %  Windows Shell Link .lnk (Microsoft [MS-SHLLINK])
+  specified       1          176    0.0000 %  plain text, UTF-8 (Unicode; IETF RFC 3629)
+  decoded         4    492065344   19.6812 %  FMOD Sample Bank 5 (FSB5) -- magic, version 0/1, first bank inside the file (fsb5.py; FMOD's, unpublished, read by third parties)
+  decoded        19    304418336   12.1759 %  Unity SerializedFile -- no magic; version 5..30, endianness byte, fileSize == the file (unityfs.py; the format is Unity's, unpublished, read by third parties)
+  derived         7   1657079072   66.2785 %  Unity streamed sidecar -- no magic; named by m_StreamData / m_Resource records of sibling serialized files, every record inside the file (unityfs.py)
+
+  specified    59 files     46613805 bytes     1.8644 % of 2500176557
+  decoded      23 files    796483680 bytes    31.8571 % of 2500176557
+  derived       7 files   1657079072 bytes    66.2785 % of 2500176557
+  opaque        0 files            0 bytes     0.0000 % of 2500176557
+  SUM          89 files   2500176557 bytes   100.0000 %
+  against the denominator 2500176557          RESIDUE 0
+
+  The SUM row is an ACCOUNTING figure and not a coverage figure.
+  It answers 'do the bytes add up to the object'. It does not
+  answer 'how much of this can be checked against something outside
+  it', because SPECIFIED and DECODED carry warrants of different
+  strength and DERIVED carries none but this session's.

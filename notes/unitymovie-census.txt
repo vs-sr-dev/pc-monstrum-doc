@@ -1,0 +1,15 @@
+$ python tools/unitymovie.py census Monstrum/Monstrum_Data
+NAME                             BYTES  PAGES  CRC VIDEO       FPS AUDIO       V SEC   A SEC TILE 
+Escape_Heli_Fiend              9515452    228    0 1920x1080 25.00 -            54.6     0.0 yes  
+Escape_LifeRaft_Fiend         10370749    264    0 1920x1080 25.00 -            42.8     0.0 yes  
+Escape_Submersible_Fiend      16163429    363    0 1920x1080 25.00 -            46.0     0.0 yes  
+Escape_LifeRaft_Hunter        17777935    373    0 1920x1080 25.00 -            42.8     0.0 yes  
+Escape_LifeRaft_Brute         14844277    314    0 1920x1080 25.00 -            42.8     0.0 yes  
+Escape_Heli_Brute             13657289    338    0 1920x1080 25.00 -            54.6     0.0 yes  
+Escape_Submersible_Hunter     15666343    340    0 1920x1080 25.00 -            46.0     0.0 yes  
+Escape_Heli_Hunter            12468818    273    0 1920x1080 25.00 -            54.6     0.0 yes  
+Escape_Submersible_Brute      15593041    339    0 1920x1080 25.00 -            46.0     0.0 yes  
+MONSTRUM SPLASH SCREEN         1491207    349    0 1920x1080 29.86 48000Hz/2ch    10.0    10.0 yes  
+
+10 movies, 127548540 bytes of Ogg, 3181 pages; 10 close on body and pages
+video 440.4 s (7.34 min), audio 10.0 s (0.17 min)

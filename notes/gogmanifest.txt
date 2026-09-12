@@ -1,0 +1,52 @@
+$ python tools/gogmanifest.py --root Monstrum
+manifest                  : goggame-galaxyFileList.ini
+sections                   : 2
+   [1950261263    ] files_counter=74      Fn= entries 74
+   [ISI           ] files_counter=1       Fn= entries 1
+files_counter, summed      : 75
+entries parsed             : 75
+  absolute (outside object): 0
+  relative                 : 75
+  distinct relative        : 75
+
+on disk, files             : 89   2500176557 bytes
+on disk, directories       : 12
+
+declared and present       : 73   2494589005 bytes
+declared, and is a DIRECTORY: 0
+declared and truly ABSENT  : 2
+present and NOT declared   : 16   5587552 bytes
+
+check: 73 + 16 = 89 files on disk  -> OK
+check: 2494589005 + 5587552 = 2500176557 bytes on disk  -> OK
+
+-- declared and truly absent --
+   43c1cdac9fc3560f440dfaa7bfab49dd
+   __redist\ISI\scriptinterpreter.exe
+
+-- present and not declared, by size --
+        3094667  unins000.dat
+        1343048  unins000.exe
+         292112  Monstrum_Data/output_log.txt
+         240921  webcache.zip
+         155324  2018-12-15_165138/crash.dmp
+         141455  goggame-1950261263.ico
+          97291  2018-12-15_165138/output_log.txt
+          69248  gog.ico
+          62895  support.ico
+          38181  EULA.txt
+          24970  2018-12-15_165138/error.log
+          23147  unins000.msg
+           3245  goggame-galaxyFileList.ini
+            831  Launch Monstrum.lnk
+            176  goglog.ini
+             41  unins000.ini
+        5587552  TOTAL
+
+-- branches, counted --
+   Monstrum_Data    68     2470670063   98.8198 %
+   (root)           18       29228909    1.1691 %
+   2018-12-15_165138    3         277585    0.0111 %
+   monstrum_data     0              0    0.0000 %
+   TOTAL            89     2500176557  100.0000 %
+   residue against the walk: 0 bytes, 0 files

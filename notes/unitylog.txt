@@ -1,0 +1,66 @@
+$ python tools/unitylog.py summary Monstrum/Monstrum_Data/output_log.txt
+output_log.txt   4362 lines
+  engine             5.5.0f3 (38b4efef76f0)
+  renderer           NVIDIA GeForce RTX 3060 Ti (ID=0x24c9)
+  assembly lines     29
+  runs (Test Seed)   4
+  clock stamps       16   first 1/31/2026 5:38:50 PM   last 1/31/2026 5:50:30 PM
+  Saved: lines       4
+  crash markers      0
+  exception lines    0
+  other lines        4203
+  monsters chosen    {'Fiend': 1, 'Hunter': 2, 'Brute': 1}
+  decks chosen       {'UpperDeck': 1, 'LowerDeck': 3}
+  ESCAPE_* saved True   0
+
+$ python tools/unitylog.py runs Monstrum/Monstrum_Data/output_log.txt
+#   SEED        BRUTE/HUNT/FI  MONSTER  DECK       SAVED  TRUE   STAMPS
+1   1872376908  2/2/2          Fiend    UpperDeck  16     0      5:39:24 PM, 5:39:29 PM, 5:39:34 PM, 5:43:09 PM
+2   2128268496  2/2/3          Hunter   LowerDeck  16     0      5:43:10 PM, 5:43:14 PM, 5:43:19 PM, 5:47:10 PM
+3   1538225150  2/3/3          Hunter   LowerDeck  16     0      5:47:12 PM, 5:47:16 PM, 5:47:21 PM, 5:50:21 PM
+4   1062072777  2/4/3          Brute    LowerDeck  16     0      5:50:23 PM, 5:50:27 PM, 5:50:30 PM
+
+4 runs
+counter steps between consecutive runs: 9 as the tally rule predicts, 0 not
+achievements loaded from: Local
+
+$ python tools/unitylog.py paths Monstrum/Monstrum_Data/output_log.txt
+21 path occurrences in 1 distinct directories (masked):
+     21  <dir>
+
+$ python tools/unitylog.py summary Monstrum/2018-12-15_165138/output_log.txt
+output_log.txt   1278 lines
+  engine             5.5.0f3 (38b4efef76f0)
+  renderer           NVIDIA GeForce GTX 970 (ID=0x13c2)
+  assembly lines     23
+  runs (Test Seed)   1
+  clock stamps       4   first 12/15/2018 5:07:42 PM   last 12/15/2018 5:08:15 PM
+  Saved: lines       1
+  crash markers      2
+  exception lines    0
+  other lines        1219
+  monsters chosen    {'Hunter': 1}
+  decks chosen       {'UpperDeck': 1}
+  ESCAPE_* saved True   0
+
+$ python tools/unitylog.py runs Monstrum/2018-12-15_165138/output_log.txt
+#   SEED        BRUTE/HUNT/FI  MONSTER  DECK       SAVED  TRUE   STAMPS
+1   321071888   19/18/19       Hunter   UpperDeck  16     0      5:07:51 PM, 5:08:02 PM, 5:08:15 PM
+
+1 runs
+counter steps between consecutive runs: 0 as the tally rule predicts, 0 not
+achievements loaded from: Local
+
+$ python tools/unitylog.py paths Monstrum/2018-12-15_165138/output_log.txt
+217 path occurrences in 10 distinct directories (masked):
+     90  <dir>
+     72  <dir>
+     21  <dir>
+      6  <dir>
+      6  <dir>
+      6  <dir>
+      6  <dir>
+      4  <dir>
+      4  <dir>
+      2  <dir>
+

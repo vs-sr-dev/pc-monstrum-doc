@@ -1,0 +1,131 @@
+$ python tools/cilmeta.py owners Monstrum/Monstrum_Data/Managed/Assembly-CSharp.dll --grep "coop|co_?op|multiplayer|lobby|matchmak|p2p|isHost|isServer|isClient|network|online"
+
+0 members in 0 types match 'coop|co_?op|multiplayer|lobby|matchmak|p2p|isHost|isServer|isClient|network|online'
+
+$ python tools/cilmeta.py owners Monstrum/Monstrum_Data/Managed/Assembly-CSharp.dll --grep "monsterSeed|selectedMonster|whichMonster|monsterType|chosenMonstType"
+ChooseAttack                             field   whichMonster
+ChooseAttack                             method  get_WhichMonster
+ChooseAttack                             method  set_WhichMonster
+Monster                                  field   MonsterType
+Monster                                  field   monsterType
+GlobalMusic                              field   monsterType
+EscapeMovieHandler                       field   monsterType
+EscapeMovieHandler                       method  set_SetMonsterType
+LevelGeneration                          field   selectedMonster
+LevelGeneration                          field   monsterSeed
+LevelGeneration                          field   chosenMonstType
+LevelGeneration                          method  get_MonsterSeed
+
+12 members in 5 types match 'monsterSeed|selectedMonster|whichMonster|monsterType|chosenMonstType'
+
+$ python tools/cilmeta.py owners Monstrum/Monstrum_Data/Managed/Assembly-CSharp.dll --grep "escape|helicopter|liferaft|submar|submersible"
+EscapeChecker                            field   EscapeList
+Helicopter                               method  UpdateHelicopter
+Helicopter                               method  HelicopterKeysFound
+MonsterEffectiveness                     field   escapeMod
+MonsterEffectiveness                     method  set_HighestEscapeCompleteness
+RaftEscapeCheck                          field   liferaft
+Sub                                      field   submarineEsc
+DestroyHelicopterEscape                  field   heliEscape
+DestroyHelicopterEscape                  method  get_HeliEscape
+DestroyHelicopterEscape                  method  set_HeliEscape
+Monster                                  field   heliEscape
+Monster                                  field   firstEscape
+Monster                                  method  get_HeliEscape
+Monster                                  method  set_HeliEscape
+MTrappingState                           field   allowEscape
+CreakType                                field   Submarine
+Crane                                    field   escapeLifeRaft
+Crane                                    field   lifeRaft
+Crane                                    method  get_EscapeRaft
+CraneHook                                method  AttachToLiferaft
+EscapeMovieHandler                       field   escapeType
+EscapeMovieHandler                       field   escapeStringType
+EscapeMovieHandler                       method  set_EscapeType
+EscapeRoute                              field   escapeRouteType
+EscapeRouteType                          field   LifeRaft
+EscapeRouteType                          field   Submersible
+FuelConnection                           field   escape
+FuelConnection                           method  get_HeliEscape
+FuelPipeEnd                              field   helicopter
+HeliLock                                 field   helicopter
+HelicopterChain                          field   helicopter
+HelicopterEscape                         field   helicopterFuelTimer
+HelicopterEscape                         field   heliEscapeStarted
+FuelPump                                 field   helicopterEscape
+FuelScaleBar                             field   helicopterEscape
+EscapeLifeRaft                           field   canEscape
+EscapeLifeRaft                           field   liferaft
+EscapeLifeRaft                           method  get_CanEscape
+Liferaft                                 field   escapeObj
+Liferaft                                 field   escapeHeight
+Liferaft                                 field   escapeState
+Liferaft                                 method  get_EscapeState
+Liferaft                                 method  set_EscapeState
+LiferaftHook                             field   liferaft
+Submarine                                field   canEscape
+Submarine                                field   escapeInteraction
+Submarine                                method  get_SubmarineSource
+SubmarineBatteryDoor                     field   submarine
+SubmarineDoor                            field   submarine
+SubmarineDoor                            field   escapeInteraction
+Trolley                                  field   subEscape
+DuctTape                                 field   lifeRaft
+KeyItemType                              field   HelicopterKeys
+FuseBoxModelsSelector                    field   isLiferaftEscape
+SubAlarm                                 field   submarine
+SubAlarm                                 method  get_SubmarineRoom
+SubRelease                               field   submarine
+RealtimeOcclusion2                       field   escape
+References                               method  get_lifeRaft
+References                               method  get_escapeLifeRaft
+ConnectRoomsLG                           field   heliEscapeID
+PrimaryRegionType                        field   SubEscape
+FixedAnimations                          field   LifeRaft_Drag
+FixedAnimations                          field   LifeRaft_DuctTape
+FixedAnimations                          field   LifeRaft_Pump
+InControl.Key                            field   Escape
+InControl.UnityInputDeviceProfile        field   EscapeKey
+SRDebugger.Settings                      field   _keyboardEscapeClose
+SRDebugger.Settings                      method  get_KeyboardEscapeClose
+SimpleJSON.JSONNode                      method  Escape
+
+70 members in 42 types match 'escape|helicopter|liferaft|submar|submersible'
+
+$ python tools/cilmeta.py typerefs ... --grep "network|lobby|matchmak|steam|net\b|p2p|socket|photon|mirror|unet"
+Steamworks.Callback`1
+Steamworks.UserStatsReceived_t
+Steamworks.GameOverlayActivated_t
+Steamworks.SteamAPIWarningMessageHook_t
+Steamworks.SteamUserStats
+Steamworks.Packsize
+Steamworks.DllCheck
+Steamworks.SteamAPI
+Steamworks.SteamClient
+System.Net.WebException
+System.Net.WebResponse
+System.Net.WebRequest
+UnityEngine.NetworkReachability
+System.Net.HttpWebRequest
+
+14 of 475 TypeRef rows match 'network|lobby|matchmak|steam|net\\b|p2p|socket|photon|mirror|unet'
+
+$ python tools/cilmeta.py memberrefs ... --grep "lobby|matchmak|network|p2p|socket|multiplayer|coop"
+
+0 of 3560 MemberRef rows match 'lobby|matchmak|network|p2p|socket|multiplayer|coop'
+
+$ python tools/cilmeta.py memberrefs ... --grep "^Steamworks"
+Steamworks.SteamUserStats::RequestCurrentStats
+Steamworks.SteamUserStats::GetAchievement
+Steamworks.SteamUserStats::SetAchievement
+Steamworks.SteamUserStats::ClearAchievement
+Steamworks.SteamUserStats::StoreStats
+Steamworks.Packsize::Test
+Steamworks.DllCheck::Test
+Steamworks.SteamAPI::Init
+Steamworks.SteamAPIWarningMessageHook_t::.ctor
+Steamworks.SteamClient::SetWarningMessageHook
+Steamworks.SteamAPI::Shutdown
+Steamworks.SteamAPI::RunCallbacks
+
+12 of 3560 MemberRef rows match '^Steamworks'

@@ -1,0 +1,106 @@
+$ python tools/cilmeta.py validate Monstrum/Monstrum_Data/Managed/Assembly-CSharp.dll
+Assembly-CSharp.dll
+  CLI header cb is 72                            ok   cb = 72
+  metadata root begins BSJB                      ok   runtime 'v2.0.50727', 5 streams
+  every stream lies inside the metadata block    ok   #Blob 70800, #GUID 16, #Strings 268112, #US 141056, #~ 551700
+  row counts == set bits in Valid                ok   29 counts, 29 bits
+  TypeDef rows end inside the #~ stream          ok   2124 rows x 18 bytes end at 1164958, stream ends at 1673524
+  every TypeDef row resolves to a name           ok   2124 of 2124
+  FieldList is monotone and every value is in 1..rows+1 ok   first [1], last [11071], Field rows 11076
+  MethodList is monotone and every value is in 1..rows+1 ok   first [1], last [11428], MethodDef rows 11433
+  Field rows end inside the #~ stream            ok   11076 rows x 10 bytes end at 1275718
+  every Field row resolves to a name             ok   11076 of 11076
+  MethodDef rows end inside the #~ stream        ok   11433 rows x 18 bytes end at 1481512
+  every MethodDef row resolves to a name         ok   11433 of 11433
+  ParamList is monotone and in 1..rows+1         ok   Param rows 4959
+  MemberRef rows end inside the #~ stream        ok   3560 rows end at 1566376
+  every MemberRef row resolves to a name and a parent ok   3560 of 3560
+
+Assembly-CSharp.dll: all checks pass
+
+$ python tools/cilmeta.py census Monstrum/Monstrum_Data/Managed/Assembly-CSharp.dll
+assembly           : Assembly-CSharp.dll  (2156032 bytes)
+PE format          : PE32
+CLI runtime        : 2.5
+metadata version   : v2.0.50727
+heap sizes byte    : 0x05  (strings 4B, guid 2B, blob 4B)
+tables present     : 29
+
+table                        rows
+0x00 Module                     1
+0x01 TypeRef                  475
+0x02 TypeDef                 2124
+0x04 Field                  11076
+0x06 MethodDef              11433
+0x08 Param                   4959
+0x09 InterfaceImpl            618
+0x0A MemberRef               3560
+0x0B Constant                1804
+0x0C CustomAttribute         3128
+0x0D FieldMarshal              12
+0x0F ClassLayout                6
+0x11 StandAloneSig           1521
+0x12 EventMap                  21
+0x14 Event                     38
+0x15 PropertyMap              537
+0x17 Property                1847
+0x18 MethodSemantics         2433
+0x19 MethodImpl               347
+0x1A ModuleRef                  7
+0x1B TypeSpec                 598
+0x1C ImplMap                  144
+0x1D FieldRVA                   4
+0x20 Assembly                   1
+0x23 AssemblyRef                7
+0x29 NestedClass              472
+0x2A GenericParam              62
+0x2B MethodSpec               756
+0x2C GenericParamConstraint       34
+TOTAL ROWS                  48025
+
+TypeDef rows       : 2124
+distinct namespaces: 42
+
+namespace                                       types
+(global namespace)                               1510
+InControl                                         245
+InControl.NativeProfile                           120
+Tobii.Gaming.Internal                              29
+SRDebugger.Services                                20
+SRF.UI                                             20
+SRDebugger.UI.Other                                18
+SRDebugger.Services.Implementation                 13
+SRF                                                13
+SRDebugger.UI.Controls                             12
+SRDebugger.Internal                                10
+XInputDotNetPure                                    9
+SRDebugger                                          9
+Tobii.GameIntegration                               9
+SRF.Service                                         8
+SimpleJSON                                          7
+XboxCtrlrInput                                      6
+Tobii.Gaming                                        6
+Tobii.Gaming.Stubs                                  6
+SRDebugger.UI.Controls.Data                         5
+SRDebugger.UI.Tabs                                  5
+Tobii.DemoScenes                                    5
+SRF.Helpers                                         4
+InterfaceMovement                                   3
+MultiplayerWithBindingsExample                      3
+UnityEngine.EventSystems                            3
+SRDebugger.Profiler                                 3
+SRF.UI.Layout                                       3
+BindingsExample                                     2
+MultiplayerBasicExample                             2
+VirtualDeviceExample                                2
+SRDebugger.UI.Controls.Profiler                     2
+SRDebugger.UI                                       2
+SRF.Components                                      2
+BasicExample                                        1
+KeyboardAndMouseExample                             1
+TouchExample                                        1
+InControl.Internal                                  1
+CircularBuffer                                      1
+SRDebugger.UI.Profiler                              1
+SRDebugger.Scripts                                  1
+SRF.Internal                                        1

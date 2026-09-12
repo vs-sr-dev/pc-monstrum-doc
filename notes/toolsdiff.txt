@@ -1,0 +1,15 @@
+$ python tools/toolsdiff.py ../pc-bumpy-doc/tools   (after this session's changes)
+mine   : tools
+theirs : ../pc-bumpy-doc/tools
+
+mine   : 609 .py     theirs : 605 .py
+only mine   : mdmp.py, unitylog.py, unitymovie.py, unitytex17.py
+only theirs : none
+common      : 605    differing   : 7
+   DIFFERS  cilmeta.py               mine 9a20c6522bdd  theirs 764ca9537069
+   DIFFERS  clrmeta.py               mine 15009a96eb96  theirs 6a768a11e411
+   DIFFERS  coverage.py              mine 4aa9a71e3e2a  theirs 26a558f50fa4
+   DIFFERS  fsb5.py                  mine 5ba1d287826d  theirs 2eb3e68ffe7d
+   DIFFERS  inno56.py                mine 83be5bc93d11  theirs 281f8bbecbec
+   DIFFERS  pe.py                    mine 1898b3ad1437  theirs d95acc0064b4
+   DIFFERS  unityfs.py               mine be2c68dd6bca  theirs 68e026c92fec

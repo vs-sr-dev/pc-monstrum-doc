@@ -1,0 +1,94 @@
+# selftests, PYTHONIOENCODING unset
+
+$ python tools/coverage.py selftest
+  the classifier emits only bucket names the report knows                                                       ok     
+
+220 checks, 0 failures
+rc=0
+
+$ python tools/clrmeta.py --selftest
+selftest: 7 of 7 specimens behaved as required (5 of the 6 blobs must be refused; stdout must be guarded)
+rc=0
+
+$ python tools/cilmeta.py selftest
+  ok   a FieldPtr table is refused                    
+
+12 cases: 12 pass, 0 fail. 6 of 12 are rejections.
+rc=0
+
+$ python tools/fsb5.py --selftest
+  clip: a body 4 bytes long is not a clip              ok
+
+  18 of 18 checks pass.
+rc=0
+
+$ python tools/unitytex17.py selftest
+  a 4096 x 4096 DXT5 over 13 mips is 22,369,648 bytes -- Brute_Diffuse_04 of this object     ok    22369648
+
+17 checks, 0 failures
+rc=0
+
+$ python tools/unitymovie.py selftest
+  a body with 4 bytes of padding does not close  ok    
+
+11 checks, 0 failures
+rc=0
+
+$ python tools/unitylog.py selftest
+  an empty log has no runs and does not crash              ok    
+
+10 checks, 0 failures
+rc=0
+
+$ python tools/mdmp.py selftest
+  a random blob is refused                                                            ok    
+
+12 checks, 0 failures
+rc=0
+
+$ python tools/inno56.py selftest
+  [ok] a slice file that does not begin with idska32  -> REFUSED: tmpf1tbml0t.bin does not begin with b'idska32\x1a': got b'NOTASLIC'
+  [ok] a slice file that does (must be accepted)      -> accepted
+9 specimens, 0 failed
+rc=0
+
+$ python tools/oggcensus.py selftest
+  a directory is refused rather than raised on       ok     
+
+15 checks, 0 failures
+rc=0
+
+$ python tools/unitytex.py selftest
+  ok      PNG is not empty                         True
+
+15 correct, 0 wrong
+rc=0
+
+$ python tools/rule0hook.py --selftest
+  a relative path is left alone                             ok     
+
+28 checks, 0 failures
+rc=0
+
+$ python tools/dirguard.py --selftest
+  want_tree accepts a directory                             ok     accepted
+
+13 checks, 0 failures
+rc=0
+
+$ python tools/nameguard.py --selftest
+  and a tool that raises while also printing the name is still `raised`                 ok     
+
+13 checks, 0 failures
+rc=0
+
+$ python tools/pathcheck.py --selftest
+  the line number is reported                    ok
+  two needles both fire                          ok
+checks : 10   failures : 0
+rc=0
+
+$ python tools/gogmanifest.py --selftest
+usage: gogmanifest.py [-h] --root ROOT [--ini INI] [--full]
+gogmanifest.py: error: the following arguments are required: --root
+rc=2

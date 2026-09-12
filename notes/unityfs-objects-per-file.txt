@@ -1,0 +1,20 @@
+$ for each of the 19 serialized files: python tools/unityfs.py info FILE | grep ^objects
+Monstrum/Monstrum_Data/globalgamemanagers                    20
+Monstrum/Monstrum_Data/globalgamemanagers.assets             1880
+Monstrum/Monstrum_Data/level0                                313
+Monstrum/Monstrum_Data/level1                                3646
+Monstrum/Monstrum_Data/level2                                5620
+Monstrum/Monstrum_Data/level3                                7696
+Monstrum/Monstrum_Data/level4                                118
+Monstrum/Monstrum_Data/level5                                105
+Monstrum/Monstrum_Data/level6                                945
+Monstrum/Monstrum_Data/resources.assets                      2203
+Monstrum/Monstrum_Data/sharedassets0.assets                  35
+Monstrum/Monstrum_Data/sharedassets1.assets                  1015
+Monstrum/Monstrum_Data/sharedassets2.assets                  49191
+Monstrum/Monstrum_Data/sharedassets3.assets                  28711
+Monstrum/Monstrum_Data/sharedassets4.assets                  10
+Monstrum/Monstrum_Data/sharedassets5.assets                  3
+Monstrum/Monstrum_Data/sharedassets6.assets                  53
+Monstrum/Monstrum_Data/Resources/unity default resources     65
+Monstrum/Monstrum_Data/Resources/unity_builtin_extra         23

@@ -1,0 +1,537 @@
+$ python tools/pe.py Monstrum/Monstrum.exe --sections --imports --version
+machine 0x8664  PE32+ True  image base 0x140000000  sections 12  timestamp 0x5837004A
+name            vsize      vaddr    rawsize     rawoff   entropy   zeros%
+.text      0x01060B4C 0x00001000 0x01060C00 0x00000600    6.5260    9.11%
+.rdata     0x002D770C 0x01062000 0x002D7800 0x01061200    6.0834   26.57%
+.data      0x00141C40 0x0133A000 0x00057400 0x01338A00    4.4131   49.28%
+.pdata     0x000D0EC0 0x0147C000 0x000D1000 0x0138FE00    6.7971   16.84%
+.rodata    0x00000B50 0x0154D000 0x00000C00 0x01460E00    4.1221   39.45%
+text       0x0000325E 0x0154E000 0x00003400 0x01461A00    5.7391   18.98%
+data       0x000081B0 0x01552000 0x00008200 0x01464E00    6.4876   22.82%
+.trace     0x00000B08 0x0155B000 0x00000C00 0x0146D000    5.7215   17.77%
+.data1     0x00000040 0x0155C000 0x00000200 0x0146DC00    0.4364   92.97%
+_RDATA     0x00001200 0x0155D000 0x00001200 0x0146DE00    3.8114   37.78%
+.rsrc      0x0008A670 0x0155F000 0x0008A800 0x0146F000    6.4180    8.53%
+.reloc     0x00029126 0x015EA000 0x00029200 0x014F9800    4.3262   38.17%
+HID.DLL                     9 imports
+      HidP_GetButtonCaps
+      HidP_GetCaps
+      HidD_GetProductString
+      HidP_MaxDataListLength
+      HidP_GetData
+      HidD_FreePreparsedData
+      HidD_GetPreparsedData
+      HidP_GetValueCaps
+      HidD_GetHidGuid
+KERNEL32.dll              208 imports
+      FormatMessageA
+      SystemTimeToFileTime
+      GetLocalTime
+      GetTimeZoneInformation
+      LocalFree
+      TerminateThread
+      GetSystemTimeAsFileTime
+      CreateFileW
+      InitializeCriticalSection
+      ResetEvent
+      ReadFile
+      SetFilePointerEx
+      WriteFile
+      SetFilePointer
+      SetEndOfFile
+      GetFileAttributesExW
+      SetFileAttributesW
+      GetFileAttributesW
+      CopyFileW
+      MoveFileExW
+      FindClose
+      FindNextFileW
+      FindFirstFileW
+      FindFirstFileExW
+      LoadLibraryExW
+      CreateEventW
+      GlobalUnlock
+      GlobalLock
+      GlobalAlloc
+      GetModuleHandleA
+      RemoveDirectoryW
+      DeleteFileW
+      SetFileTime
+      GetSystemTime
+      GetDiskFreeSpaceExA
+      GetModuleFileNameW
+      lstrcpynA
+      lstrcpyA
+      lstrcpynW
+      GetCommandLineW
+      CancelIo
+      GetOverlappedResult
+      ExpandEnvironmentStringsW
+      SetLastError
+      RtlVirtualUnwind
+      RtlLookupFunctionEntry
+      ResumeThread
+      GetThreadContext
+      SuspendThread
+      RtlCaptureContext
+      OutputDebugStringA
+      GetEnvironmentVariableA
+      GetFileAttributesA
+      GetModuleFileNameA
+      GetVersionExA
+      GetCurrentDirectoryA
+      VerifyVersionInfoW
+      VerSetConditionMask
+      GetVersionExW
+      GlobalMemoryStatusEx
+      GetUserDefaultLangID
+      GetComputerNameW
+      GetTempPathW
+      LocalAlloc
+      SetUnhandledExceptionFilter
+      GetCurrentDirectoryW
+      OpenEventW
+      DebugBreak
+      GetFileSize
+      FileTimeToDosDateTime
+      FileTimeToLocalFileTime
+      lstrlenA
+      GetFileTime
+      VirtualQuery
+      GlobalMemoryStatus
+      SetErrorMode
+      GetFullPathNameW
+      HeapFree
+      RtlUnwindEx
+      HeapReAlloc
+      RtlPcToFileHeader
+      DecodePointer
+      EncodePointer
+      HeapQueryInformation
+      HeapSize
+      CreateFileMappingA
+      ExitProcess
+      CreateMutexA
+      ExitThread
+      GetCommandLineA
+      GetStartupInfoW
+      GetStdHandle
+      HeapSetInformation
+      GetVersion
+      HeapCreate
+      FlsGetValue
+      FlsSetValue
+      FlsFree
+      FlsAlloc
+      GetLocaleInfoW
+      UnhandledExceptionFilter
+      TerminateProcess
+      GetCPInfo
+      GetACP
+      GetOEMCP
+      IsValidCodePage
+      SetHandleCount
+      GetFileType
+      GetConsoleCP
+      GetConsoleMode
+      FlushFileBuffers
+      SetStdHandle
+      LCMapStringW
+      FreeEnvironmentStringsW
+      GetEnvironmentStringsW
+      GetTickCount
+      GetStringTypeW
+      GetUserDefaultLCID
+      GetLocaleInfoA
+      EnumSystemLocalesA
+      IsValidLocale
+      WriteConsoleW
+      CreateFileA
+      CompareStringW
+      SetEnvironmentVariableA
+      GetProcessHeap
+      SwitchToThread
+      SetThreadAffinityMask
+      GetProcessAffinityMask
+      InitializeSListHead
+      InterlockedPushEntrySList
+      InterlockedPopEntrySList
+      InterlockedFlushSList
+      GetThreadPriority
+      OpenEventA
+      SetWaitableTimer
+      CreateWaitableTimerA
+      GetSystemDirectoryA
+      GetDriveTypeW
+      PeekNamedPipe
+      GetFileInformationByHandle
+      FindFirstFileExA
+      GetDriveTypeA
+      FileTimeToSystemTime
+      SetConsoleMode
+      ReadConsoleInputA
+      GetFullPathNameA
+      GetTimeFormatA
+      GetDateFormatA
+      CreateSemaphoreW
+      FlushInstructionCache
+      CreateMutexW
+      SignalObjectAndWait
+      GetThreadLocale
+      ExpandEnvironmentStringsA
+      VerifyVersionInfoA
+      FlushConsoleInputBuffer
+      GetModuleHandleW
+      GetCurrentThreadId
+      SetThreadPriority
+      CreateThread
+      InitializeCriticalSectionAndSpinCount
+      TryEnterCriticalSection
+      MapViewOfFile
+      DuplicateHandle
+      UnmapViewOfFile
+      LeaveCriticalSection
+      EnterCriticalSection
+      DeleteCriticalSection
+      ReleaseMutex
+      WaitForSingleObject
+      GetWindowsDirectoryW
+      IsDebuggerPresent
+      GetCurrentThread
+      GetCurrentProcess
+      SetConsoleCtrlHandler
+      GetCurrentProcessId
+      RaiseException
+      SleepEx
+      QueryPerformanceFrequency
+      QueryPerformanceCounter
+      SetHandleInformation
+      FormatMessageW
+      SetDllDirectoryW
+      LoadLibraryW
+      GetLastError
+      CreateDirectoryW
+      LoadLibraryA
+      GetProcAddress
+      FreeLibrary
+      WideCharToMultiByte
+      MultiByteToWideChar
+      CreateEventA
+      SetEvent
+      ReleaseSemaphore
+      WaitForSingleObjectEx
+      Sleep
+      CloseHandle
+      CreateSemaphoreA
+      TlsSetValue
+      TlsGetValue
+      TlsFree
+      TlsAlloc
+      GetSystemInfo
+      VirtualAlloc
+      VirtualFree
+      VirtualProtect
+      HeapAlloc
+USER32.dll                110 imports
+      MessageBoxW
+      IsWindowVisible
+      ScreenToClient
+      WindowFromPoint
+      GetCursorPos
+      GetCaretBlinkTime
+      EnumDisplaySettingsA
+      SetClipboardData
+      EmptyClipboard
+      OpenClipboard
+      GetClipboardData
+      IsClipboardFormatAvailable
+      CreateIconIndirect
+      ReleaseDC
+      GetDC
+      GetSystemMetrics
+      SetCursor
+      wvsprintfA
+      UpdateWindow
+      CloseClipboard
+      MonitorFromWindow
+      ValidateRect
+      SetTimer
+      PeekMessageA
+      RegisterClassExW
+      DialogBoxParamW
+      EndDialog
+      LoadIconA
+      SendDlgItemMessageW
+      SetDlgItemTextA
+      SetDlgItemTextW
+      MessageBoxA
+      CopyRect
+      OffsetRect
+      GetAncestor
+      UnregisterClassW
+      SetCursorPos
+      AdjustWindowRectEx
+      GetWindowPlacement
+      SetWindowLongA
+      ChangeDisplaySettingsA
+      GetDlgItem
+      SetWindowLongPtrA
+      CreateDialogParamA
+      GetWindowLongPtrA
+      SetWindowPos
+      GetWindowRect
+      GetParent
+      GetThreadDesktop
+      GetUserObjectInformationA
+      EnumWindows
+      RegisterWindowMessageA
+      SendMessageA
+      IsIconic
+      ShowWindow
+      GetMessageA
+      KillTimer
+      LoadImageW
+      DialogBoxParamA
+      CheckDlgButton
+      CreateDialogParamW
+      PeekMessageW
+      DispatchMessageW
+      IsDialogMessageW
+      MsgWaitForMultipleObjects
+      EnableWindow
+      CopyImage
+      IsDlgButtonChecked
+      SetWindowTextW
+      GetWindowLongPtrW
+      ClipCursor
+      LoadCursorA
+      DestroyCursor
+      DestroyIcon
+      SetCapture
+      ReleaseCapture
+      UnregisterDeviceNotification
+      DispatchMessageA
+      TranslateMessage
+      PtInRect
+      GetClientRect
+      GetWindowLongA
+      GetProcessWindowStation
+      SendMessageTimeoutA
+      GetUserObjectInformationW
+      GetMessageExtraInfo
+      RegisterDeviceNotificationW
+      SystemParametersInfoW
+      ClientToScreen
+      DefWindowProcW
+      DestroyWindow
+      CreateWindowExW
+      GetAsyncKeyState
+      GetKeyState
+      wsprintfA
+      RegisterRawInputDevices
+      GetRawInputData
+      GetRawInputDeviceInfoW
+      GetRawInputDeviceList
+      SetForegroundWindow
+      ShowCursor
+      GetFocus
+      SetFocus
+      EnumDisplayDevicesA
+      EnumDisplayMonitors
+      GetMonitorInfoA
+      RegisterClassW
+      PostQuitMessage
+      GetDesktopWindow
+      SetWindowLongPtrW
+VERSION.dll                 5 imports
+      GetFileVersionInfoSizeA
+      GetFileVersionInfoA
+      GetFileVersionInfoSizeW
+      GetFileVersionInfoW
+      VerQueryValueA
+ole32.dll                   9 imports
+      CoUninitialize
+      CoInitialize
+      CoCreateGuid
+      CoTaskMemAlloc
+      CoTaskMemFree
+      CoSetProxyBlanket
+      StringFromGUID2
+      PropVariantClear
+      CoCreateInstance
+SHLWAPI.dll                 3 imports
+      PathCanonicalizeW
+      PathFileExistsW
+      SHDeleteKeyW
+ADVAPI32.dll               25 imports
+      CryptReleaseContext
+      RegisterEventSourceW
+      ReportEventW
+      DeregisterEventSource
+      CryptImportKey
+      CryptVerifySignatureA
+      CryptDestroyKey
+      RegDeleteValueA
+      RegQueryValueExA
+      RegSetValueExA
+      RegCreateKeyW
+      OpenProcessToken
+      CryptDestroyHash
+      CryptGetHashParam
+      CryptHashData
+      CryptCreateHash
+      CryptAcquireContextA
+      RegOpenKeyExW
+      RegCloseKey
+      RegQueryValueExW
+      RegSetValueExW
+      RegCreateKeyExW
+      GetUserNameA
+      GetSidSubAuthority
+      GetTokenInformation
+GDI32.dll                   8 imports
+      DeleteObject
+      CreateBitmap
+      CreateDIBSection
+      SetPixelFormat
+      ChoosePixelFormat
+      GetDeviceCaps
+      GetObjectA
+      SwapBuffers
+SHELL32.dll                 4 imports
+      CommandLineToArgvW
+      SHGetFolderPathW
+      ShellExecuteW
+      SHFileOperationW
+OPENGL32.dll                6 imports
+      wglGetCurrentContext
+      wglCreateContext
+      wglMakeCurrent
+      wglDeleteContext
+      wglGetProcAddress
+      wglGetCurrentDC
+WINMM.dll                  23 imports
+      timeBeginPeriod
+      waveInGetNumDevs
+      timeEndPeriod
+      waveOutGetDevCapsA
+      waveOutGetDevCapsW
+      waveOutClose
+      waveOutOpen
+      waveOutUnprepareHeader
+      waveOutWrite
+      waveOutReset
+      waveInAddBuffer
+      timeGetTime
+      waveOutGetNumDevs
+      waveInPrepareHeader
+      waveInUnprepareHeader
+      waveInGetDevCapsA
+      waveInGetDevCapsW
+      waveInStart
+      waveInOpen
+      waveInClose
+      waveInReset
+      waveOutPrepareHeader
+      waveOutGetPosition
+WS2_32.dll                 45 imports
+      #1
+      #15
+      #57
+      #23
+      #111
+      #4
+      #103
+      #115
+      #12
+      #3
+      #116
+      #8
+      #2
+      #9
+      #11
+      #108
+      #7
+      WSAEventSelect
+      WSACloseEvent
+      WSACreateEvent
+      WSAWaitForMultipleEvents
+      WSAResetEvent
+      WSAEnumNetworkEvents
+      WSASetEvent
+      #5
+      #53
+      #16
+      #52
+      #14
+      #22
+      getnameinfo
+      getaddrinfo
+      WSAIoctl
+      #17
+      #20
+      #19
+      #18
+      #151
+      freeaddrinfo
+      WSASocketA
+      #112
+      #21
+      #10
+      #6
+      #13
+OLEAUT32.dll                5 imports
+      #9
+      #2
+      #6
+      #12
+      #8
+IMM32.dll                   8 imports
+      ImmReleaseContext
+      ImmSetOpenStatus
+      ImmGetCompositionStringW
+      ImmGetConversionStatus
+      ImmAssociateContextEx
+      ImmAssociateContext
+      ImmGetContext
+      ImmSetCompositionStringW
+DNSAPI.dll                  2 imports
+      DnsFree
+      DnsQuery_A
+IPHLPAPI.DLL                1 imports
+      GetIpAddrTable
+WINHTTP.dll                 1 imports
+      WinHttpGetIEProxyConfigForCurrentUser
+17 DLLs, 472 named imports
+17 resource data entries, directory at file 0x146F000 (566896 bytes)
+  type=ICON         name=1              lang=1033   rva=0x0155F930 size=1128
+  type=ICON         name=2              lang=1033   rva=0x0155FD98 size=2440
+  type=ICON         name=3              lang=1033   rva=0x01560720 size=4264
+  type=ICON         name=4              lang=1033   rva=0x015617C8 size=9640
+  type=ICON         name=5              lang=1033   rva=0x01563D70 size=16936
+  type=ICON         name=6              lang=1033   rva=0x01567F98 size=38056
+  type=ICON         name=7              lang=1033   rva=0x01571440 size=67624
+  type=ICON         name=8              lang=1033   rva=0x01581C68 size=152104
+  type=ICON         name=9              lang=1033   rva=0x015A6E90 size=270376
+  type=DIALOG       name=9              lang=1033   rva=0x0155F3C0 size=292
+  type=DIALOG       name=105            lang=1033   rva=0x0155F4E8 size=268
+  type=DIALOG       name=107            lang=1033   rva=0x0155F5F8 size=450
+  type=DIALOG       name=108            lang=1033   rva=0x0155F7C0 size=220
+  type=DIALOG       name=109            lang=1033   rva=0x0155F8A0 size=142
+  type=GROUP_ICON   name=103            lang=1033   rva=0x015E8EB8 size=132
+  type=VERSION      name=1              lang=1033   rva=0x015E94C8 size=424
+  type=MANIFEST     name=1              lang=1033   rva=0x015E8F40 size=1409
+
+--- VS_VERSIONINFO, 424 bytes ---
+   VS_VERSION_INFO
+   StringFileInfo
+   040904b0
+   FileVersion
+   5.5.0.3716335
+   ProductVersion
+   5.5.0.3716335
+   Unity Version
+   5.5.0f3_38b4efef76f0
+   VarFileInfo
+   Translation
+   FIXEDFILEINFO FileVersion 5.5.0.46319  ProductVersion 5.5.0.46319

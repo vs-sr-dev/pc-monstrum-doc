@@ -1,0 +1,115 @@
+$ python tools/unityfs.py externals Monstrum/Monstrum_Data
+globalgamemanagers
+    -> resources/unity_builtin_extra                type 0
+    -> library/unity default resources              type 0
+    -> sharedassets1.assets                         type 0
+    -> sharedassets0.assets                         type 0
+    -> sharedassets2.assets                         type 0
+    -> sharedassets3.assets                         type 0
+    -> globalgamemanagers.assets                    type 0
+    -> resources.assets                             type 0
+    -> sharedassets6.assets                         type 0
+globalgamemanagers.assets
+    -> resources/unity_builtin_extra                type 0
+    -> library/unity default resources              type 0
+level0
+    -> globalgamemanagers.assets                    type 0
+    -> sharedassets0.assets                         type 0
+    -> library/unity default resources              type 0
+level1
+    -> globalgamemanagers.assets                    type 0
+    -> sharedassets1.assets                         type 0
+    -> library/unity default resources              type 0
+    -> sharedassets0.assets                         type 0
+level2
+    -> globalgamemanagers.assets                    type 0
+    -> library/unity default resources              type 0
+    -> sharedassets2.assets                         type 0
+level3
+    -> globalgamemanagers.assets                    type 0
+    -> sharedassets3.assets                         type 0
+    -> sharedassets0.assets                         type 0
+    -> library/unity default resources              type 0
+    -> sharedassets1.assets                         type 0
+    -> sharedassets2.assets                         type 0
+level4
+    -> globalgamemanagers.assets                    type 0
+    -> library/unity default resources              type 0
+    -> sharedassets0.assets                         type 0
+    -> sharedassets4.assets                         type 0
+    -> sharedassets1.assets                         type 0
+level5
+    -> globalgamemanagers.assets                    type 0
+    -> library/unity default resources              type 0
+    -> sharedassets5.assets                         type 0
+    -> sharedassets0.assets                         type 0
+level6
+    -> globalgamemanagers.assets                    type 0
+    -> sharedassets6.assets                         type 0
+    -> sharedassets2.assets                         type 0
+    -> sharedassets1.assets                         type 0
+    -> sharedassets3.assets                         type 0
+    -> library/unity default resources              type 0
+    -> sharedassets0.assets                         type 0
+    -> resources.assets                             type 0
+resources.assets
+    -> globalgamemanagers.assets                    type 0
+    -> library/unity default resources              type 0
+    -> sharedassets0.assets                         type 0
+    -> resources/unity_builtin_extra                type 0
+sharedassets0.assets
+    -> library/unity default resources              type 0
+    -> globalgamemanagers.assets                    type 0
+sharedassets1.assets
+    -> globalgamemanagers.assets                    type 0
+    -> resources/unity_builtin_extra                type 0
+    -> library/unity default resources              type 0
+    -> sharedassets0.assets                         type 0
+sharedassets2.assets
+    -> globalgamemanagers.assets                    type 0
+    -> resources/unity_builtin_extra                type 0
+    -> library/unity default resources              type 0
+    -> resources.assets                             type 0
+    -> sharedassets0.assets                         type 0
+    -> sharedassets1.assets                         type 0
+sharedassets3.assets
+    -> globalgamemanagers.assets                    type 0
+    -> resources/unity_builtin_extra                type 0
+    -> library/unity default resources              type 0
+    -> resources.assets                             type 0
+    -> sharedassets0.assets                         type 0
+    -> sharedassets1.assets                         type 0
+    -> sharedassets2.assets                         type 0
+sharedassets4.assets
+    -> library/unity default resources              type 0
+    -> globalgamemanagers.assets                    type 0
+    -> sharedassets0.assets                         type 0
+    -> sharedassets1.assets                         type 0
+sharedassets5.assets
+    -> library/unity default resources              type 0
+    -> globalgamemanagers.assets                    type 0
+    -> sharedassets0.assets                         type 0
+sharedassets6.assets
+    -> globalgamemanagers.assets                    type 0
+    -> resources/unity_builtin_extra                type 0
+    -> library/unity default resources              type 0
+    -> resources.assets                             type 0
+    -> sharedassets0.assets                         type 0
+    -> sharedassets1.assets                         type 0
+    -> sharedassets2.assets                         type 0
+    -> sharedassets3.assets                         type 0
+
+19 files, 82 external references, 11 distinct targets
+
+TARGET                                                   REFS
+library/unity default resources                            17
+globalgamemanagers.assets                                  16
+sharedassets0.assets                                       14
+sharedassets1.assets                                        9
+resources/unity_builtin_extra                               7
+sharedassets2.assets                                        6
+resources.assets                                            5
+sharedassets3.assets                                        4
+sharedassets6.assets                                        2
+sharedassets4.assets                                        1
+sharedassets5.assets                                        1

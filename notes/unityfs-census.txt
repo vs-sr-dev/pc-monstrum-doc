@@ -1,0 +1,137 @@
+$ python tools/unityfs.py census Monstrum/Monstrum_Data
+19 serialized files, 101652 objects
+format versions: 17 x19
+unity versions:  5.5.0b10 x1, 5.5.0f3 x18
+
+CLASS                             OBJECTS          BYTES    SHARE
+GameObject (1)                      28979        1967009    0.65%
+Transform (4)                       26577        2105460    0.70%
+MonoBehaviour (114)                 15773        4633616    1.53%
+BoxCollider (65)                     5405         281060    0.09%
+MeshFilter (33)                      4934         118416    0.04%
+MeshRenderer (23)                    4789         685500    0.23%
+RectTransform (224)                  2402         286776    0.09%
+AudioClip (83)                       2216         229980    0.08%
+MonoScript (115)                     1880         188916    0.06%
+CanvasRenderer (222)                 1774          21288    0.01%
+Mesh (43)                            1157      133131488   44.08%
+MeshCollider (64)                     992          47616    0.02%
+Texture2D (28)                        822        1251016    0.41%
+Animator (95)                         717          40152    0.01%
+Material (21)                         703         154332    0.05%
+AnimationClip (74)                    388       23842800    7.89%
+Rigidbody (54)                        361          12996    0.00%
+Light (108)                           321          43656    0.01%
+Avatar (90)                           188         362252    0.12%
+LODGroup (205)                        154          14924    0.00%
+AudioSource (82)                      152          37392    0.01%
+Shader (48)                           129        2739480    0.91%
+SkinnedMeshRenderer (137)             112          32804    0.01%
+Canvas (223)                           98           4998    0.00%
+CapsuleCollider (136)                  93           4836    0.00%
+Sprite (213)                           74          55324    0.02%
+Animation (111)                        63           3600    0.00%
+Camera (20)                            57           6669    0.00%
+SphereCollider (135)                   49           2156    0.00%
+ParticleSystem (198)                   47         322416    0.11%
+ParticleSystemRenderer (199)           47          11092    0.00%
+TextMesh (102)                         23           1584    0.00%
+AudioReverbZone (167)                  14           1176    0.00%
+AudioListener (81)                     13            208    0.00%
+CanvasGroup (225)                      12            288    0.00%
+MovieTexture (152)                     10      127549072   42.23%
+RenderTexture (84)                     10            556    0.00%
+AnimatorController (91)                 9         226580    0.08%
+Font (128)                              9         696872    0.23%
+PreloadData (150)                       8         606552    0.20%
+RenderSettings (104)                    7           2212    0.00%
+LightmapSettings (157)                  7            476    0.00%
+? (92)                                  7            112    0.00%
+FlareLayer (124)                        7            112    0.00%
+AudioLowPassFilter (169)                7            396    0.00%
+? (12)                                  4            376    0.00%
+? (15)                                  4            480    0.00%
+? (26)                                  4            608    0.00%
+SpriteRenderer (212)                    4            608    0.00%
+HingeJoint (59)                         4            520    0.00%
+Cloth (183)                             4          11184    0.00%
+Cubemap (89)                            3            592    0.00%
+FixedJoint (138)                        3            102    0.00%
+PlayerSettings (129)                    1            485    0.00%
+InputManager (13)                       1          19372    0.01%
+TagManager (78)                         1            716    0.00%
+AudioManager (11)                       1             40    0.00%
+? (94)                                  1          10001    0.00%
+MonoManager (116)                       1          22840    0.01%
+? (30)                                  1            352    0.00%
+TimeManager (5)                         1             16    0.00%
+DelayedCallManager (98)                 1              0    0.00%
+PhysicsManager (55)                     1            180    0.00%
+BuildSettings (141)                     1          61532    0.02%
+QualitySettings (47)                    1            524    0.00%
+ResourceManager (147)                   1         105584    0.03%
+? (149)                                 1          49208    0.02%
+? (155)                                 1              0    0.00%
+NavMeshProjectSettings (126)            1            284    0.00%
+Physics2DSettings (19)                  1            208    0.00%
+RuntimeInitializeOnLoadManager (300)          1            264    0.00%
+? (301)                                 1              0    0.00%
+UnityConnectSettings (310)              1            108    0.00%
+CharacterController (143)               1             64    0.00%
+AudioDistortionFilter (170)             1             20    0.00%
+Flare (121)                             1            101    0.00%
+Halo (122)                              1             24    0.00%
+ConfigurableJoint (153)                 1            338    0.00%
+PhysicMaterial (134)                    1             28    0.00%
+TOTAL                              101652      302012975  100.00%
+
+49 files in the tree are not serialized files:
+  ScreenSelector.bmp                                              47670
+  app.info                                                           22
+  output_log.txt                                                 292112
+  resources.assets.resS                                         1354436
+  sharedassets0.assets.resS                                     1253776
+  sharedassets0.resource                                         529344
+  sharedassets1.assets.resS                                   204101036
+  sharedassets1.resource                                       15285504
+  sharedassets2.assets.resS                                  1117031056
+  sharedassets3.assets.resS                                   328712572
+  sharedassets3.resource                                      454526592
+  sharedassets4.resource                                       21723904
+  sharedassets5.assets.resS                                     1084900
+  sharedassets6.assets.resS                                     3541296
+  Managed/Assembly-CSharp-firstpass.dll                          291328
+  Managed/Assembly-CSharp.dll                                   2156032
+  Managed/Assembly-UnityScript-firstpass.dll                      87552
+  Managed/Assembly-UnityScript.dll                                20480
+  Managed/Boo.Lang.dll                                           126976
+  Managed/Mono.Security.dll                                      293376
+  Managed/System.Core.dll                                        265728
+  Managed/System.dll                                            1069056
+  Managed/UnityEngine.Networking.dll                             251392
+  Managed/UnityEngine.PlaymodeTestsRunner.dll                     30208
+  Managed/UnityEngine.UI.dll                                     242688
+  Managed/UnityEngine.VR.dll                                       3072
+  Managed/UnityEngine.dll                                       1200128
+  Managed/UnityEngine.dll.mdb                                    413678
+  Managed/UnityScript.Lang.dll                                    13824
+  Managed/mscorlib.dll                                          2497024
+  Mono/MonoPosixHelper.dll                                       113664
+  Mono/mono.dll                                                 2617280
+  Mono/etc/mono/browscap.ini                                     311984
+  Mono/etc/mono/config                                             1691
+  Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx                 58196
+  Mono/etc/mono/1.0/machine.config                                17258
+  Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx                 60453
+  Mono/etc/mono/2.0/machine.config                                27625
+  Mono/etc/mono/2.0/settings.map                                   2618
+  Mono/etc/mono/2.0/web.config                                    11686
+  Mono/etc/mono/2.0/Browsers/Compat.browser                        1605
+  Mono/etc/mono/mconfig/config.xml                                25817
+  Plugins/CSteamworks.dll                                        141824
+  Plugins/InControlNative.dll                                    392192
+  Plugins/OVRGamepad.dll                                          12800
+  Plugins/OVRPlugin.dll                                         1894312
+  Plugins/Tobii.GameIntegration.dll                             1838592
+  Plugins/XInputInterface64.dll                                   68608
+  Plugins/steam_api64.dll                                        206760

@@ -1,0 +1,223 @@
+$ python tools/crossall.py _work/sha1-all.txt --collection .. --skip pc-monstrum-doc
+my distinct sha1            : 87
+  (identical files inside one object collapse into one key here;
+   the file count is the tree census's, not this tool's)
+empty-file sha1 among mine  : no
+collection root             : ..
+skipping                    : pc-monstrum-doc
+
+repositories swept          : 117
+list files swept            : 493
+hash tokens read            : 173964
+distinct sha1 in those lists: (counted below)
+
+========================================================================
+EMPTY-FILE SHA1 (the trap): 63 occurrences in 19 repositories
+   dc-dinocrisis-doc                        x4
+   pc-allodsonline-doc                      x2
+   pc-bloodandlace-doc                      x1
+   pc-brokensword4-doc                      x1
+   pc-bumpy-doc                             x3
+   pc-canediterracotta-doc                  x1
+   pc-capcombeatemupbundle-doc              x1
+   pc-clic11-doc                            x9
+   pc-deadlypremonitiondc-doc               x3
+   pc-hugoshouseofhorrors-doc               x1
+   pc-ilmiocomputer0206                     x6
+   pc-karmaflow-doc                         x17
+   pc-kingsofthebeach-doc                   x4
+   pc-residentevil-doc                      x2
+   pc-rpgmakermv-doc                        x1
+   pc-teenagent-doc                         x2
+   pc-wizardry-doc                          x3
+   pc-zerocomico-doc                        x1
+   vis-racetheclock-doc                     x1
+   -> excluded from the crossings below.
+
+========================================================================
+THE RATE AS A FUNCTION OF MINIMUM FILE LENGTH
+
+A crossing is a claim that two objects share a file. On a tree whose
+files are short, it is also a claim that two short byte strings
+happened to be equal, and those are not the same claim. This table is
+printed BEFORE any figure is quoted, and the figure quoted anywhere
+else has to name the threshold it was taken at.
+
+   min bytes    my hashes    crossings         rate
+           0           87           12     13.7931 %
+           1           87           12     13.7931 %
+           4           87           12     13.7931 %
+           8           87           12     13.7931 %
+          16           87           12     13.7931 %
+          32           86           12     13.9535 %
+          64           85           12     14.1176 %
+         128           85           12     14.1176 %
+         256           84           12     14.2857 %
+        1024           81           12     14.8148 %
+        4096           75            9     12.0000 %
+       65536           55            3      5.4545 %
+
+========================================================================
+CROSSINGS at a minimum length of 0 bytes: 12 of my 87 distinct hashes appear in another repository
+   (threshold 0 -- every hash, including files too short to be anybody's)
+
+sha1 c5c967d47cc57112eec5fe7db0229b36e22ec661   1343048 bytes
+   mine : unins000.exe
+   also : pc-brokensword3-doc                notes/crossall.txt
+   also : pc-brokensword3-doc                notes/sha1-all.txt
+   also : pc-brokensword4-doc                notes/crossall.txt
+   also : pc-brokensword4-doc                notes/sha1-all.txt
+   also : pc-brokensword5-doc                notes/crossall.txt
+   also : pc-brokensword5-doc                notes/sha1-all.txt
+   also : pc-brokensword5-doc                docs/11-the-binaries.md
+   also : pc-heretickingdoms-doc             notes/crossall.txt
+   also : pc-heretickingdoms-doc             docs/18-leftovers.md
+   also : pc-inquisitor-doc                  notes/crossall.txt
+   also : pc-inquisitor-doc                  notes/sha1-all.txt
+   also : pc-inquisitor-doc                  docs/12-against-the-collection.md
+   also : pc-motoracer-doc                   docs/12-against-the-collection.md
+   also : pc-teenagent-doc                   notes/crossall.txt
+   also : pc-teenagent-doc                   notes/hashall.txt
+   also : pc-thelegendofheroes6-doc          notes/sha1-all.txt
+   also : pc-themepark-doc                   notes/hashall.txt
+   also : pc-themepark-doc                   notes/sha1-all.txt
+   also : pc-twinsensquest-doc               docs/12-against-the-collection.md
+
+sha1 2d5454e161de8a5b65910f27bd70d9d0ad8fa476   311984 bytes
+   mine : Monstrum_Data/Mono/etc/mono/browscap.ini
+   also : pc-iamsetsuna-doc                  notes/crossall.txt
+   also : pc-iamsetsuna-doc                  notes/hashall.txt
+   also : pc-iamsetsuna-doc                  notes/sha1-all.txt
+   also : pc-teslaeffect-doc                 notes/sha1-all.txt
+   also : pc-themurderofsonicthehedgehog-doc notes/crossall-files.txt
+   also : pc-themurderofsonicthehedgehog-doc notes/hashall.txt
+   also : pc-twinsensquest-doc               notes/sha1-installed.txt
+
+sha1 b6d0919b43934b29a550369370de069ed569b36e   69248 bytes
+   mine : gog.ico
+   also : pc-brokensword3-doc                notes/crossall.txt
+   also : pc-brokensword3-doc                notes/sha1-all.txt
+   also : pc-brokensword4-doc                notes/crossall.txt
+   also : pc-brokensword4-doc                notes/sha1-all.txt
+   also : pc-brokensword5-doc                notes/crossall.txt
+   also : pc-brokensword5-doc                notes/sha1-all.txt
+   also : pc-flightoftheamazonqueen-doc      notes/sha1-all.txt
+   also : pc-heretickingdoms-doc             notes/crossall.txt
+   also : pc-inquisitor-doc                  notes/crossall.txt
+   also : pc-inquisitor-doc                  notes/sha1-all.txt
+   also : pc-inquisitor-doc                  docs/12-against-the-collection.md
+   also : pc-landsoflore-doc                 notes/census.txt
+   also : pc-teenagent-doc                   notes/crossall.txt
+   also : pc-teenagent-doc                   notes/hashall.txt
+   also : pc-thelegendofheroes6-doc          notes/crossall.txt
+   also : pc-thelegendofheroes6-doc          notes/sha1-all.txt
+   also : pc-themepark-doc                   notes/hashall.txt
+   also : pc-themepark-doc                   notes/sha1-all.txt
+   also : pc-twinsensquest-doc               docs/12-against-the-collection.md
+
+sha1 c18a2d771d2487e6c6dc51a2ba1127f4ebb0213a   62895 bytes
+   mine : support.ico
+   also : pc-brokensword3-doc                notes/crossall.txt
+   also : pc-brokensword3-doc                notes/sha1-all.txt
+   also : pc-brokensword4-doc                notes/crossall.txt
+   also : pc-brokensword4-doc                notes/sha1-all.txt
+   also : pc-brokensword5-doc                notes/crossall.txt
+   also : pc-brokensword5-doc                notes/sha1-all.txt
+   also : pc-deadlypremonitiondc-doc         notes/crossall.txt
+   also : pc-deadlypremonitiondc-doc         notes/sha1-all.txt
+   also : pc-flightoftheamazonqueen-doc      notes/sha1-all.txt
+   also : pc-heretickingdoms-doc             notes/crossall.txt
+   also : pc-inquisitor-doc                  notes/crossall.txt
+   also : pc-inquisitor-doc                  notes/sha1-all.txt
+   also : pc-inquisitor-doc                  docs/12-against-the-collection.md
+   also : pc-landsoflore-doc                 notes/census.txt
+   also : pc-motoracer-doc                   notes/against-the-collection.txt
+   also : pc-motoracer-doc                   notes/crossall-members.txt
+   also : pc-motoracer-doc                   notes/crossall.txt
+   also : pc-teenagent-doc                   notes/crossall.txt
+   also : pc-teenagent-doc                   notes/hashall.txt
+   also : pc-thelegendofheroes6-doc          notes/crossall.txt
+   also : pc-thelegendofheroes6-doc          notes/sha1-all.txt
+   also : pc-themepark-doc                   notes/hashall.txt
+   also : pc-themepark-doc                   notes/sha1-all.txt
+   also : pc-twinsensquest-doc               docs/12-against-the-collection.md
+
+sha1 b06cb1d09ad3bbdf1d8214c910e3da2a228d113c   60453 bytes
+   mine : Monstrum_Data/Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx
+   also : pc-iamsetsuna-doc                  notes/crossall.txt
+   also : pc-iamsetsuna-doc                  notes/hashall.txt
+   also : pc-iamsetsuna-doc                  notes/sha1-all.txt
+   also : pc-teslaeffect-doc                 notes/sha1-all.txt
+
+sha1 4680a34aae1193f1e4a6aac1a5dd3c307de257fb   58196 bytes
+   mine : Monstrum_Data/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx
+   also : pc-iamsetsuna-doc                  notes/crossall.txt
+   also : pc-iamsetsuna-doc                  notes/hashall.txt
+   also : pc-iamsetsuna-doc                  notes/sha1-all.txt
+   also : pc-teslaeffect-doc                 notes/sha1-all.txt
+
+sha1 936520d5bb5c00a1985d7a4c4f0ef763a9031862   25817 bytes
+   mine : Monstrum_Data/Mono/etc/mono/mconfig/config.xml
+   also : pc-iamsetsuna-doc                  notes/crossall.txt
+   also : pc-iamsetsuna-doc                  notes/hashall.txt
+   also : pc-iamsetsuna-doc                  notes/sha1-all.txt
+   also : pc-teslaeffect-doc                 notes/sha1-all.txt
+   also : pc-themurderofsonicthehedgehog-doc notes/crossall-files.txt
+   also : pc-themurderofsonicthehedgehog-doc notes/hashall.txt
+   also : pc-twinsensquest-doc               notes/sha1-installed.txt
+
+sha1 abeefe05d6d6f64c0ef1f5e023f1861000aadb55   23147 bytes
+   mine : unins000.msg
+   also : pc-brokensword3-doc                notes/crossall.txt
+   also : pc-brokensword3-doc                notes/sha1-all.txt
+   also : pc-brokensword4-doc                notes/crossall.txt
+   also : pc-brokensword4-doc                notes/sha1-all.txt
+   also : pc-brokensword5-doc                notes/crossall.txt
+   also : pc-brokensword5-doc                notes/sha1-all.txt
+   also : pc-heretickingdoms-doc             notes/crossall.txt
+   also : pc-inquisitor-doc                  notes/crossall.txt
+   also : pc-inquisitor-doc                  notes/sha1-all.txt
+   also : pc-inquisitor-doc                  docs/12-against-the-collection.md
+   also : pc-landsoflore-doc                 notes/census.txt
+   also : pc-teenagent-doc                   notes/crossall.txt
+   also : pc-teenagent-doc                   notes/hashall.txt
+   also : pc-thelegendofheroes6-doc          notes/crossall.txt
+   also : pc-thelegendofheroes6-doc          notes/sha1-all.txt
+   also : pc-themepark-doc                   notes/hashall.txt
+   also : pc-themepark-doc                   notes/sha1-all.txt
+
+sha1 a4d7e05516f63d6ab67327b299d4fb2852cb840b   11686 bytes
+   mine : Monstrum_Data/Mono/etc/mono/2.0/web.config
+   also : pc-iamsetsuna-doc                  notes/crossall.txt
+   also : pc-iamsetsuna-doc                  notes/hashall.txt
+   also : pc-iamsetsuna-doc                  notes/sha1-all.txt
+   also : pc-teslaeffect-doc                 notes/sha1-all.txt
+
+sha1 d16baa15e7d3042bcf9d7318209c696f4daf2cb0   2618 bytes
+   mine : Monstrum_Data/Mono/etc/mono/2.0/settings.map
+   also : pc-iamsetsuna-doc                  notes/crossall.txt
+   also : pc-iamsetsuna-doc                  notes/hashall.txt
+   also : pc-iamsetsuna-doc                  notes/sha1-all.txt
+   also : pc-teslaeffect-doc                 notes/sha1-all.txt
+
+sha1 957e4e50e74c50347af92abf240c2c7aab3f3f79   1691 bytes
+   mine : Monstrum_Data/Mono/etc/mono/config
+   also : pc-iamsetsuna-doc                  notes/crossall.txt
+   also : pc-iamsetsuna-doc                  notes/hashall.txt
+   also : pc-iamsetsuna-doc                  notes/sha1-all.txt
+   also : pc-teslaeffect-doc                 notes/sha1-all.txt
+
+sha1 187dff516f9448e63ea5078190b3347922c4b3eb   1605 bytes
+   mine : Monstrum_Data/Mono/etc/mono/2.0/Browsers/Compat.browser
+   also : pc-iamsetsuna-doc                  notes/crossall.txt
+   also : pc-iamsetsuna-doc                  notes/hashall.txt
+   also : pc-iamsetsuna-doc                  notes/sha1-all.txt
+   also : pc-teslaeffect-doc                 notes/sha1-all.txt
+   also : pc-themurderofsonicthehedgehog-doc notes/crossall-files.txt
+   also : pc-themurderofsonicthehedgehog-doc notes/hashall.txt
+   also : pc-themurderofsonicthehedgehog-doc notes/hashall.txt
+   also : pc-themurderofsonicthehedgehog-doc notes/hashall.txt
+   also : pc-twinsensquest-doc               notes/sha1-installed.txt
+   also : pc-twinsensquest-doc               notes/sha1-installed.txt
+   also : pc-twinsensquest-doc               notes/sha1-installed.txt
+
