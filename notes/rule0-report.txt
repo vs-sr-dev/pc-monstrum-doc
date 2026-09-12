@@ -1,5 +1,5 @@
-shell calls seen by the hook : 145
-  allowed                    : 142
+shell calls seen by the hook : 164
+  allowed                    : 161
   REFUSED as rule-0          : 3
       inline program         2
       in-place edit script   1

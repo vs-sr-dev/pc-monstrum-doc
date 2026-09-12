@@ -86,8 +86,9 @@ into a coverage figure; the derived one carries this session's warrant only.
 published). It was made to refuse something before the first tool was
 touched — a `python -c` — and refused twice more without being asked: a
 `sed -i` on a scratch script, and a `python -c ""` left in a compound
-command. **145 shell calls seen, 142 allowed, 3 refused, 0 reached the
-shell** (notes/rule0-report.txt). The habit the prompt named — `python -`
+command. **164 shell calls seen, 161 allowed, 3 refused, 0 reached the
+shell** (notes/rule0-report.txt, written as the last command before the
+final commit; the commit's own calls come after it). The habit the prompt named — `python -`
 with nothing on stdin — did not fire this time.
 
 `dirguard --survey`: 608 surveyed (the survey skips itself), raised 214,
